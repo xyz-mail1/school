@@ -1,0 +1,166 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+<meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"><title>regis</title>
+
+<style type="text/css"></style>
+<script>
+function validateForm() {
+var x=document.regis.fname.value;
+var y=document.regis.mname.value;
+var z=document.regis.lname.value;
+var p=document.regis.pin.value;
+var r=document.regis.address.value;
+if(x==null||x=="")
+{
+alert("name");
+document.regis.fname.focus();
+return false;
+}
+if(y==null||y=="")
+{
+alert("middle name");
+document.regis.mname.focus();
+return false;
+}
+if(z==null||z=="")
+{
+alert("last name");
+document.regis.lname.focus();
+return false;
+}
+if(r==null||r=="")
+{
+alert("address");
+document.regis.address.focus();
+return false;
+}
+if(p=""||isNaN(p)||p.length<6||p.length>6)
+{
+alert("pincode");
+document.regis.pin.focus();
+return false;
+}
+if((document.regis.gender[0].checked==false)&&(document.regis.gender[1].checked==false))
+{
+alert("gender");
+document.regis.gender[0].focus();
+return false;
+}
+if((document.regis.hobby[0].checked==false)&&(document.regis.hobby[1].checked==false)&&(document.regis.hobby[2].checked==false)&&(document.regis.hobby[3].checked==false))
+{ alert("hobby");
+document.regis.hobby[0].focus();
+return false;
+}
+if(document.regis.city.value=="-1")
+{
+alert("city");
+document.regis.city.focus();
+return false;
+}
+}
+</script>
+</head><body style="color: black; background-color: white;" alink="#33ffff" link="#ccffff" vlink="#ff99ff">
+<form onsubmit="return validateForm()" method="post" action="regis.html" name="regis"><br>
+<div style="text-align: center; font-family: Goudy Old Style;"><big><big><big><big><big><span style="font-family: Arial Black;">Registration Form</span><br>
+</big></big></big></big></big></div>
+<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp;(<span style="color: red;"> *&nbsp; <span style="color: black;">= Required )</span></span><br>
+<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <label>&nbsp;First
+name </label><span style="color: red;">*</span>:
+&nbsp; &nbsp;&nbsp; &nbsp;<input name="fname">
+<br>
+<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <label>&nbsp;Middle
+name </label><span style="color: red;">*</span>:&nbsp;
+&nbsp;<input name="mname">&nbsp;<span style="color: red;"></span><br>
+<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <label>&nbsp;Lat
+name </label><span style="color: red;">*</span>:
+&nbsp; &nbsp; &nbsp; &nbsp; <input name="lname">&nbsp;<span style="color: red;"></span><br>
+<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<label>
+&nbsp;Gender </label><span style="color: red;">*</span>:
+&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp;<input name="gender" value="Male" type="radio"> Male
+&nbsp; <input name="gender" value="Female" type="radio"> Female&nbsp;<span style="color: red;"></span><br>
+<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <label>&nbsp;Hobbies
+</label><span style="color: red;">*</span>:
+&nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; <input name="hobby" value="singing" type="checkbox"> Singing &nbsp; <input name="hobby" value="dancing" type="checkbox"> Dancing &nbsp; <input name="hobby" value="reading" type="checkbox">
+Reading &nbsp; <input name="hobby" value="cooking" type="checkbox"> Other<br>
+<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <label>&nbsp;Address
+</label><span style="color: red;">*</span>: <span style="color: red;"></span>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;<textarea cols="20" rows="5" name="address"></textarea><br>
+<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <br>
+<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <label>&nbsp;City
+</label><span style="color: red;">*</span>:
+&nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp;<span style="color: red;"></span>
+<select name="city"><option value="-1">choose</option><option value="1">surat</option><option value="2">gsgdds</option></select>
+<br>
+<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<label>
+Pincode </label>: &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp;<input maxlength="6" name="pin"><br>
+<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; <input name="submit" value="Submit" type="submit"> &nbsp;<input name="Reset" value="Reset" type="reset"><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<br>
+<br>
+<br>
+<br>
+</form>
+</body></html>
