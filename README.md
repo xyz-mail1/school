@@ -1,6 +1,4 @@
 # school
-class 12 gseb codes
-
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vulputate consectetur arcu. Praesent convallis, lacus consequat mollis feugiat, tortor augue dictum velit, sit amet tristique tortor massa a turpis. Sed vulputate risus augue, at elementum ligula volutpat quis. Nunc fringilla, tellus eget efficitur commodo, odio leo pellentesque metus, eget euismod risus odio non massa. Praesent vitae justo odio. Cras tristique ante sit amet pharetra dictum. Nunc non mauris eget purus auctor convallis. Morbi ut erat ut nisl accumsan mattis eu id ligula. Mauris nec semper ex, vel porttitor libero. Morbi pellentesque pharetra nulla, ut pellentesque turpis iaculis a. Nulla lobortis et ligula eu ornare. Aliquam faucibus, purus at porttitor finibus, leo nibh eleifend lectus, nec faucibus sem diam a mauris. Morbi condimentum ante eget lacus tempor ullamcorper. Fusce pellentesque quis felis a posuere.
 
